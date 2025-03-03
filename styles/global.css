@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  background-image: url(../assets/images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 80%;
+}
+
+body {
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin: auto;
+  padding: 2rem;
+  gap: 1.5rem;
+  border-radius: 16px;
+  width: 500px;
+  /* height: 300px; */
+  background: rgba(10, 25, 80, 0.4);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--primary-font);
+  /* align-self: flex-start; */
+  /* border: 2px solid black; */
+}
+
+.pic {
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url(../assets/images/pic.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* .info {
+  border: 2px solid black;
+} */
+
+.card-containers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.bmi-calculator,
+.queue-system,
+.medication-tracker {
+  width: 300px;
+  /* height: 160px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: rgba(10, 25, 80, 0.4);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
