@@ -1,3 +1,22 @@
+const initialPatients = [
+  { 
+      name: "LeBron James", 
+      status: "Urgent" 
+  },
+  { 
+      name: "Kevin Durant", 
+      status: "Regular" },
+  { 
+      name: "Anthony Davis", 
+      status: "Emergency" },
+  { 
+      name: "Stephen Curry", 
+      status: "Regular" },
+  { 
+      name: "Kyrie Irving", 
+      status: "Urgent" }
+];
+
 class PatientQueue {
     constructor(patients = []) {
       this.queue = patients.slice(0, 5);
@@ -32,24 +51,6 @@ class PatientQueue {
     }
   }
   
-  const initialPatients = [
-    { 
-        name: "LeBron James", 
-        status: "Urgent" 
-    },
-    { 
-        name: "Kevin Durant", 
-        status: "Regular" },
-    { 
-        name: "Anthony Davis", 
-        status: "Emergency" },
-    { 
-        name: "Stephen Curry", 
-        status: "Regular" },
-    { 
-        name: "Kyrie Irving", 
-        status: "Urgent" }
-  ];
   
   const pq = new PatientQueue(initialPatients);
   console.log("Initial Queue:", pq.viewQueue());

@@ -1,10 +1,29 @@
 function MedsTracker(checkTime) {
     const medications = [
-        { name: "Aspirin", dosage: "100mg", frequency: "08:00" },
-        { name: "Metformin", dosage: "500mg", frequency: "12:00" },
-        { name: "Lisinopril", dosage: "10mg", frequency: "18:00" },
-        { name: "Atorvastatin", dosage: "20mg", frequency: "21:00" },
-        { name: "Omeprazole", dosage: "40mg", frequency: "07:00" }
+        { 
+            name: "Aspirin", 
+            dosage: "100mg", 
+            frequency: "08:00" 
+        },
+        { 
+            name: "Metformin", 
+            dosage: "500mg", 
+            frequency: "12:00" 
+        },
+        { 
+            name: "Lisinopril", 
+            dosage: "10mg", 
+            frequency: "18:00" 
+        },
+        { 
+            name: "Atorvastatin", 
+            dosage: "20mg", 
+            frequency: "21:00" },
+        { 
+            name: "Omeprazole", 
+            dosage: "40mg", 
+            frequency: "07:00" 
+        }
     ];
 
     function checkMedication() {
