@@ -1,20 +1,24 @@
 const initialPatients = [
   { 
       name: "LeBron James", 
-      status: "Urgent" 
+      status: "Urgent", 
   },
   { 
       name: "Kevin Durant", 
-      status: "Regular" },
+      status: "Regular", 
+  },
   { 
       name: "Anthony Davis", 
-      status: "Emergency" },
+      status: "Emergency", 
+  },
   { 
       name: "Stephen Curry", 
-      status: "Regular" },
+      status: "Regular", 
+  },
   { 
       name: "Kyrie Irving", 
-      status: "Urgent" }
+      status: "Urgent", 
+  }
 ];
 
 class PatientQueue {
@@ -46,7 +50,11 @@ class PatientQueue {
     }
   
     sortQueue() {
-      const priorityOrder = { "Emergency": 1, "Urgent": 2, "Regular": 3 };
+      const priorityOrder = { 
+        "Emergency": 1, 
+        "Urgent": 2, 
+        "Regular": 3 
+      };
       this.queue.sort((a, b) => priorityOrder[a.status] - priorityOrder[b.status]);
     }
   }
@@ -55,7 +63,13 @@ class PatientQueue {
   const pq = new PatientQueue(initialPatients);
   console.log("Initial Queue:", pq.viewQueue());
   
-  pq.addPatient({ name: "Michael Jordan", status: "Emergency" });
+  pq.addPatient(
+    { 
+      name: "Michael Jordan", 
+      status: "Emergency" 
+    }
+  );
+  
   console.log("Queue after attempting to add Michael Jordan:", pq.viewQueue());
   
   pq.removePatient();

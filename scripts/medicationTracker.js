@@ -35,7 +35,6 @@ function MedsTracker(checkTime) {
             }
         });
     }
-
     checkMedication();
 }
 
