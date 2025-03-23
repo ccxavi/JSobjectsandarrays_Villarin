@@ -31,10 +31,11 @@ function MedsTracker(checkTime) {
 
         medications.forEach(med => {
             if (med.frequency === currentTime) {
-                alert(`Time to take your medication: ${med.name} - ${med.dosage}`);
+                console.log(`Time to take your medication: ${med.name} - ${med.dosage}`);
             }
         });
     }
+
     checkMedication();
 }
 
