@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 
 :root {
@@ -55,40 +55,15 @@ h3 {
   background-position: top;
 }
 
-.sub-card {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.3) !important;
-  color: var(--text-primary) !important;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.sub-card:hover {
-  background: rgba(255, 255, 255, 0.5) !important;
-  color: black !important;
-}
-
 .card-footer p {
   font-size: smaller;
   color: var(--text-primary) !important;
   font-weight: 500;
 }
 
-.card-body a {
-  display: block;
-  text-decoration: none;
-  color: var(--text-primary) !important;
-}
-
 a {
   text-decoration: none;
   color: var(--text-primary);
-}
-
-.sub-card a:hover {
-  color: black !important;
 }
 
 .card-header,
